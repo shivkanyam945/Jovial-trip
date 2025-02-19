@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JOVIAL TRIPS</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="loginstyle.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  
+  </head>
+  <body>
+    <!-- header section -->
+    <section class="header">
+      <div class="logo">
+          <img src="images/logo.png">
+      </div>
+      <nav class="navbar">
+          <a href="home.html">home</a>
+          <a href="Travel.html">Travel</a>
+          <a href="about.html">about</a>
+          <a href="login.html">login</a>
+          
+      </nav>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+  </section>
+   <!-- header end -->
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="" class="sign-in-form" method="post" name="google-sheet">
+            <h2 class="title">Sign In</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <input type="submit" value="Login" class="btn solid" name="submit" />
+
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+          <form action="https://docs.google.com/forms/d/e/1FAIpQLScho49sFwRgFaYPuXUdtxctouqqaGpZadSYV0_BMyh2hzE27A/formResponse" class="sign-up-form"  method="_blank">
+            <h2 class="title">Sign Up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" name="entry.595096958" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email"  name="entry.115897293" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" name="entry.1682935192" placeholder="Password" />
+            </div>
+            <input type="submit" value="Sign Up" class="btn solid"  name="submit"/>
+
+            <p class="social-text">Or Sign up with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="panels-container">
+
+        <div class="panel left-panel">
+            <div class="content">
+                <h3>New here?</h3>
+                <p>Register To Get Better Experience And Recommendation</p>
+                <button class="btn transparent" id="sign-up-btn">Sign Up</button>
+            </div>
+            <img src="./img/log.svg" class="image" alt="">
+        </div>
+
+        <div class="panel right-panel">
+            <div class="content">
+                <h3>One of us?</h3>
+                <p>Login with us </p>
+                <button class="btn transparent" id="sign-in-btn">Sign In</button>
+            </div>
+            <img src="./img/register.svg" class="image" alt="">
+        </div>
+      </div>
+    </div>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbypQu4l-_JjXQQbiK0CrI7SjMqZzUGN1uYP9F9gmx7Ss6d7LIcloUca6p2XRZbuMXkDwg/exec'
+      const form = document.forms['google-sheet']
+    
+      form.addEventListener('Sign Up', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+    <script src="./app.js"></script>
+    
+<!-- footer sectioon starts -->
+<section class="footer">
+  <div class="box-container">
+   
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="home.html"> <i class="fas fa-angle-right"></i> home</a>
+          <a href="about.html"> <i class="fas fa-angle-right"></i> about</a>
+          <a href="hotel.html"> <i class="fas fa-angle-right"></i> hotel</a>
+          <a href="food.html"> <i class="fas fa-angle-right"></i> food</a>
+          <a href="itinerary.html"> <i class="fas fa-angle-right"></i> iternary</a>
+  
+      </div>
+  
+      <div class="box">
+          <h3>extra links</h3>
+          <a href="#"> <i class="fas fa-angle-right"></i> ask questions</a>
+          <a href="#"> <i class="fas fa-angle-right"></i> about us</a>
+          <a href="#"> <i class="fas fa-angle-right"></i> privacy policy</a>
+          <a href="#"> <i class="fas fa-angle-right"></i> terms of use </a>
+      </div>
+  
+      
+      <div class="box">
+          <h3> contact info</h3>
+          <a href="#"> <i class="fas fa-phone"></i> +123-456-7890</a>
+          <a href="#"> <i class="fas fa-envelope"></i> jovialtrips@gmail.com</a>
+          <a href="#"> <i class="fas fa-map"></i> mumbai, india - 400104</a>
+      </div>
+     
+      <div class="box">
+          <h3>follow us</h3>
+          <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+          <a href="#"> <i class="fab fa-twitter"></i> twitter</a>
+          <a href="#"> <i class="fab fa-instagram"></i> instagram</a>
+      </div>
+  
+  </div>
+  <!-- footer sectioon ends -->
+  </body>
+</html>

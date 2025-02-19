@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOVIAL TRIPS</title>
+    <link rel="stylesheet" href="svg focusable=false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5
+         4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="places.css">
+
+</head>
+
+<body>
+    <section class="header">
+        <div class="logo">
+            <img src="images/logo.png">
+        </div>
+    
+        <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="Travel.html">Travel</a>
+            <a href="about.html">about</a>
+            <a href="login.html">login</a>
+
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+
+    <!-- filter Items -->
+    <section>
+    <nav>
+        <div class="items">
+          <span class="item active" data-name="all">All</span>
+          <span class="item" data-name="Mumbai">Mumbai</span>
+          <span class="item" data-name="Goa">Goa</span>
+          <span class="item" data-name="Pune">Pune</span>
+          <span class="item" data-name="Chennai">Chennai</span>
+          <span class="item" data-name="Rajasthan">Rajasthan</span>
+        </div>
+      </nav>
+      <!-- filter Images -->
+      <div class="gallery">
+        <div class="image" data-name="Mumbai"><span><img src="images/marine.jpg" alt=""></span><div class="desc"><h3>Marine Lines</h3></div></div>
+        <div class="image" data-name="Mumbai"><span><img src="images/siddhivinayak.jpg" alt=""></span><div class="desc"><h3>Siddhivinayak Temple</h3></div></div>
+        <div class="image" data-name="Mumbai"><span><img src="images/jhangir.jpg" alt=""></span><div class="desc"><h3>Jehangir Art Gallery</h3></div></div>
+        <div class="image" data-name="Mumbai"><span><img src="images/Horniman Circle Garden.jpg" alt=""></span><div class="desc"><h3>Horniman Circle Garden</h3></div></div>
+        <div class="image" data-name="Mumbai"><span><img src="images/girgaon.jpg" alt=""></span><div class="desc"><h3>Girgaon Chowpatty</h3></div></div>
+        <div class="image" data-name="Mumbai"><span><img src="images/Mahalakshmi.jpg" alt=""> </span><div class="desc"><h3>Mahalakshmi Temple</h3></div></div>
+        <div class="image" data-name="Mumbai"><span><img src="images/hajiali.jpg" alt=""></span><div class="desc"><h3>Haji Ali Dargah</h3></div></div>
+        <div class="image" data-name="Mumbai"><span><img src="images/sealink.jpg" alt=""></span><div class="desc"><h3>Bandra-Worli Sealink</h3></div></div>
+        <div class="image" data-name="Mumbai"><span><img src="images/elephantacaves.jpg" alt=""></span><div class="desc"><h3>Elephanta Caves</h3></div></div>
+        <div class="image" data-name="Mumbai"><span><img src="images/mountmary.jpg" alt=""></span><div class="desc"><h3>Mount Mary Church </h3></div></div>
+        <div class="image" data-name="Mumbai"><span><img src="images/panchgani.jpg" alt=""></span><div class="desc"><h3>Panchgani</h3></div></div>
+        <div class="image" data-name="Mumbai"><span><img src="images/kanhericaves.jpg" alt=""></span><div class="desc"><h3>Kanheri Caves</h3></div></div>
+
+        <div class="image" data-name="Goa"><span><img src="images/Agonda Beach.jpg" alt=""></span><div class="desc"><h3>Agonda Beach</h3></div></div>
+        <div class="image" data-name="Goa"><span><img src="images/Anjuna Beach.jpg" alt=""></span><div class="desc"><h3>Anjuna Beach</h3></div></div>
+        <div class="image" data-name="Goa"><span><img src="images/DudhSagar Falls.jpg" alt=""></span><div class="desc"><h3>DudhSagar WaterFalls</h3></div></div>
+        <div class="image" data-name="Goa"><span><img src="images/Calangute Beach.jpg" alt=""></span><div class="desc"><h3>Calangute Beach</h3></div></div>
+        <div class="image" data-name="Goa"><span><img src="images/Cruise in Goa.jpg" alt=""></span><div class="desc"><h3>Cruise Party</h3></div></div>
+        <div class="image" data-name="Goa"><span><img src="images/Basilica of Bom Jesus.jpg" alt=""></span><div class="desc"><h3>Basilica of Bom Jesus</h3></div></div>
+        <div class="image" data-name="Goa"><span><img src="images/Fort Aguada.jpg" alt=""></span><div class="desc"><h3>Fort Aguada</h3></div></div>
+        <div class="image" data-name="Goa"><span><img src="images/fontainhas.jpg" alt=""></span><div class="desc"><h3>Fontainhas Village</h3></div></div>
+        <div class="image" data-name="Goa"><span><img src="images/Vagator Beach.jpg" alt=""></span><div class="desc"><h3>Vagator Beach</h3></div></div>
+
+
+        <div class="image" data-name="Pune"><span><img src="images/Shaniwar Wada.jpg" alt=""></span><div class="desc"><h3>Shaniwar Wada</h3></div></div>
+        <div class="image" data-name="Pune"><span><img src="images/Shivneri Fort.jpg" alt=""></span><div class="desc"><h3>Shivneri Fort</h3></div></div>
+        <div class="image" data-name="Pune"><span><img src="images/Aga Khan Palace.jpg" alt=""></span><div class="desc"><h3>Aga Khan Palace</h3></div></div>
+        <div class="image" data-name="Pune"><span><img src="images/Rajgad Trek.jpg" alt=""></span><div class="desc"><h3>Rajgad</h3></div></div>
+        <div class="image" data-name="Pune"><span><img src="images/Pune Okayama Friendship Garden.jpeg" alt=""></span><div class="desc"><h3>Okayama Friendship Garden</h3></div></div>
+        <div class="image" data-name="Pune"><span><img src="images/Lal Mahal.jpg" alt=""></span><div class="desc"><h3>Lal Mahal</h3></div></div>
+        <div class="image" data-name="Pune"><span><img src="images/Pataleshwar Caves.jpg" alt=""></span><div class="desc"><h3>Pataleshwar Caves</h3></div></div>
+        <div class="image" data-name="Pune"><span><img src="images/dagdusheth.jpg" alt=""></span><div class="desc"><h3>Shreemant DagduSheth Halwai Mandir</h3></div></div>
+
+
+        <div class="image" data-name="Chennai"><span><img src="images/Royapuram Fishing Harbour.jpg" alt=""></span><div class="desc"><h3>Royapuram Fishing Harbour</h3></div></div>
+        <div class="image" data-name="Chennai"><span><img src="images/Nettukuppam.jpg" alt=""></span><div class="desc"><h3>Nettukuppam</h3></div></div>
+        <div class="image" data-name="Chennai"><span><img src="images/Ashtalakshmi temple.jpg" alt=""></span><div class="desc"><h3>Ashtalakshmi Temple</h3></div></div>
+        <div class="image" data-name="Chennai"><span><img src="images/Government Museum Chennai.jpg" alt=""></span><div class="desc"><h3>Government Museum</h3></div></div>
+        <div class="image" data-name="Chennai"><span><img src="images/Valluvar Kottam.jpeg" alt=""></span><div class="desc"><h3>Valluvar Kottam</h3></div></div>
+        <div class="image" data-name="Chennai"><span><img src="images/MGR film city.jpg" alt=""></span><div class="desc"><h3>MGR Film City </h3></div></div>
+        <div class="image" data-name="Chennai"><span><img src="images/Akkarai Beach.jpg" alt=""></span><div class="desc"><h3>Akkarai Beach</h3></div></div>
+        <div class="image" data-name="Chennai"><span><img src="images/Madras War Cemetery.jpg" alt=""></span><div class="desc"><h3>Madras War Cemetry </h3></div></div>
+
+        <div class="image" data-name="Rajasthan"><span><img src="images/lake pichola.jpg" alt=""></span><div class="desc"><h3>Lake Pichola</h3></div></div>
+        <div class="image" data-name="Rajasthan"><span><img src="images/jantar mantar.jpg" alt=""></span><div class="desc"><h3>Jantar Mantar </h3></div></div>
+        <div class="image" data-name="Rajasthan"><span><img src="images/hawa mahal.jpg" alt=""></span><div class="desc"><h3>Hawa Mahal</h3></div></div>
+        <div class="image" data-name="Rajasthan"><span><img src="images/city palace.jpg" alt=""></span><div class="desc"><h3>City Palace</h3></div></div>
+        <div class="image" data-name="Rajasthan"><span><img src="images/amber.jpg" alt=""></span><div class="desc"><h3>Amber Palace</h3></div></div>
+        <div class="image" data-name="Rajasthan"><span><img src="images/mehrangarh.jpg" alt=""></span><div class="desc"><h3>Mehrangarh Fort</h3></div></div>
+        <div class="image" data-name="Rajasthan"><span><img src="images/bagore.jpg" alt=""></span><div class="desc"><h3>Bagore Ki Haweli Museum</h3></div></div>
+        <div class="image" data-name="Rajasthan"><span><img src="images/ranthambore tiger.jpg" alt=""></span><div class="desc"><h3>Ranthambhore Tiger Reserve</h3></div></div>
+
+      </div>
+    </div>
+    <!-- fullscreen img preview box -->
+    <div class="preview-box">
+      <div class="details">
+        <span class="title">Places to visit : <p></p></span>
+        <span class="icon fas fa-times"></span>
+      </div>
+      <div class="image-box"><img src="" alt=""></div>
+    </div>
+    <div class="shadow"></div>
+
+</section>
+
+
+<!-- footer sectioon starts -->
+<section class="footer">
+  <div class="box-container">
+   
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="home.html"> <i class="fas fa-angle-right"></i> home</a>
+          <a href="about.php"> <i class="fas fa-angle-right"></i> about</a>
+          <a href="hotel.html"> <i class="fas fa-angle-right"></i> hotel</a>
+          <a href="food.html"> <i class="fas fa-angle-right"></i> food</a>
+          <a href="itinerary.php"> <i class="fas fa-angle-right"></i> iternary</a>
+  
+      </div>
+  
+      <div class="box">
+          <h3>extra links</h3>
+          <a href="#"> <i class="fas fa-angle-right"></i> ask questions</a>
+          <a href="#"> <i class="fas fa-angle-right"></i> about us</a>
+          <a href="#"> <i class="fas fa-angle-right"></i> privacy policy</a>
+          <a href="#"> <i class="fas fa-angle-right"></i> terms of use </a>
+      </div>
+  
+      
+      <div class="box">
+          <h3> contact info</h3>
+          <a href="#"> <i class="fas fa-phone"></i> +123-456-7890</a>
+          <a href="#"> <i class="fas fa-envelope"></i> jovialtrips27@gmail.com</a>
+          <a href="#"> <i class="fas fa-map"></i> mumbai, india - 400104</a>
+      </div>
+     
+      <div class="box">
+          <h3>follow us</h3>
+          <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+          <a href="#"> <i class="fab fa-twitter"></i> twitter</a>
+          <a href="#"> <i class="fab fa-instagram"></i> instagram</a>
+      </div>
+  
+  </div>
+  
+  
+  <!-- footer sectioon ends -->
+  
+    <script src="places.js"></script>
+</body>
+
+</html>
